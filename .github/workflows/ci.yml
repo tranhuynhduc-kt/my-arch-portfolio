@@ -1,5 +1,8 @@
 name: CI
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI or CLI
 jobs:
   build:
     runs-on: ubuntu-latest
