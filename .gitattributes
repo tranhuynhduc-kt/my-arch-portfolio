@@ -1,0 +1,8 @@
+I thi# Auto detect text files and normalize line endings to LF in repository
+* text=auto
+
+# Force LF for shell scripts (required for Unix/Linux compatibility)
+*.sh text eol=lf
+
+# Husky hooks should always use LF (they run in Git Bash on Windows)
+.husky/* text eol=lf
